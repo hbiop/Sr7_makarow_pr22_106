@@ -6,19 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/skip"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="49dp"
-        android:gravity="top"
-        android:text="Пропустить"
-        android:textColor="#57A9FF"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
@@ -36,4 +24,5 @@
         android:src="@drawable/shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

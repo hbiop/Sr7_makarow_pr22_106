@@ -3,8 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/layoout_onboard3"
     android:layout_height="match_parent">
-
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="49dp"
+        android:gravity="top"
+        android:text="Закончить"
+        android:enabled="true"
+        android:onClick="onEnd"
+        android:textColor="#57A9FF"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

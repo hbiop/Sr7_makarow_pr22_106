@@ -14,9 +14,13 @@ import androidx.fragment.app.Fragment;
 
 public class onBoard1 extends Fragment {
     ImageView image, image2;
+    public onBoard1()
+    {
 
+    }
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
     }
 
