@@ -69,6 +69,7 @@
 
     <EditText
         android:id="@+id/editTextText"
+
         android:layout_width="344dp"
         android:layout_height="40dp"
         android:elevation="10dp"
@@ -125,5 +126,5 @@
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/next" />
 </androidx.constraintlayout.widget.ConstraintLayout>
