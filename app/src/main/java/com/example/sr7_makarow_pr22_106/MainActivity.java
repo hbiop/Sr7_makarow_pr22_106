@@ -29,6 +29,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Sr7_makarow_pr22_106);
         setContentView(R.layout.activity_main);
         //skip = (TextView) findViewById(R.id.skip);
         //btn = findViewById(R.id.button3);

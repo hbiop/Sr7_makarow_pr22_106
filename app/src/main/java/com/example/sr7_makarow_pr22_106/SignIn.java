@@ -16,6 +16,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
     EditText editText;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Sr7_makarow_pr22_106);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin);
         next = findViewById(R.id.next);
