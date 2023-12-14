@@ -1,5 +1,6 @@
 package com.example.sr7_makarow_pr22_106;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -20,6 +21,8 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin);
         next = findViewById(R.id.next);
+        next.setBackgroundColor(getResources().getColor(R.color.btn_deactive));
+        next.setOnClickListener(this);
         next.setEnabled(false);
         editText = findViewById(R.id.editTextText);
         editText.setOnTouchListener(this);
@@ -28,7 +31,12 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
 
     @Override
     public void onClick(View v) {
-        //editText.getText().clear();
+        switch (v.getId())
+        {
+            case R.id.next:
+                startActivity(new Intent(SignIn.this, Email.class));
+                break;
+        }
 
     }
 
@@ -54,10 +62,12 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener, V
         if(editText.getText().length() > 0)
         {
             next.setEnabled(true);
+            next.setBackgroundColor(getResources().getColor(R.color.btn_active));
         }
         else
         {
             next.setEnabled(false);
+            next.setBackgroundColor(getResources().getColor(R.color.btn_deactive));
         }
     }
 }
