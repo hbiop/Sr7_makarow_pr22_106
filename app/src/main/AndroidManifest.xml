@@ -29,6 +29,7 @@
 
         </activity>
         <activity android:name=".CreatePassword"/>
+        <activity android:name=".CreateCard"/>
     </application>
 
 </manifest>

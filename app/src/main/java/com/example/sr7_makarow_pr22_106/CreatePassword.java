@@ -106,7 +106,7 @@ public class CreatePassword extends AppCompatActivity implements View.OnClickLis
                 checkLength();
                 break;
             case R.id.textView:
-                startActivity(new Intent(CreatePassword.this , MainActivity.class));
+                startActivity(new Intent(CreatePassword.this , CreateCard.class));
                 break;
         }
     }
@@ -146,7 +146,7 @@ public class CreatePassword extends AppCompatActivity implements View.OnClickLis
             im2.setImageResource(R.drawable.ellipse_57);
             im3.setImageResource(R.drawable.ellipse_57);
             im4.setImageResource(R.drawable.ellipse_57);
-            startActivity(new Intent(CreatePassword.this , MainActivity.class));
+            startActivity(new Intent(CreatePassword.this , CreateCard.class));
         }
     }
 }

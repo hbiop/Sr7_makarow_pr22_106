@@ -2,4 +2,8 @@
     <string name="app_name">Sr7_makarow_pr22_106</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="pol_array">
+        <item>М</item>
+        <item>Ж</item>
+    </string-array>
 </resources>
