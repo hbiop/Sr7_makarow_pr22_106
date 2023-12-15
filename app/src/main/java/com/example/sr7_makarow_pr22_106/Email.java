@@ -51,7 +51,7 @@ public class Email extends AppCompatActivity implements TextWatcher {
         }
         if(ed.getText().length() >0  && ed2.getText().length() >0 && ed3.getText().length() >0 && ed4.getText().length() >0)
         {
-            startActivity(new Intent(Email.this, SignIn.class));
+            startActivity(new Intent(Email.this, CreatePassword.class));
         }
     }
 
