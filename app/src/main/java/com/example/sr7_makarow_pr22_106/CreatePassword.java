@@ -1,5 +1,6 @@
 package com.example.sr7_makarow_pr22_106;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,7 @@ public class CreatePassword extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_password);
         init();
+        checkLength();
     }
     public void init()
     {
@@ -48,7 +50,7 @@ public class CreatePassword extends AppCompatActivity implements View.OnClickLis
         im1 = findViewById(R.id.imageView);
         im2 = findViewById(R.id.imageView3);
         im3 = findViewById(R.id.imageView4);
-        im4 = findViewById(R.id.imageView2);
+        im4 = findViewById(R.id.imageView6);
         imBack = findViewById(R.id.imageView5);
         imBack.setOnClickListener(this);
         skip = findViewById(R.id.textView);
